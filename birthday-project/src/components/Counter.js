@@ -1,14 +1,16 @@
 import React, {useState} from 'react'
 import List from './List'
+import {data} from '../data'
 
 const Counter = () => {
+
+    const[users, setUsers] = useState(data);
     return (
        <>
        
        <section className="container">
-           <h1> 0 Birthdays Today</h1> 
+           
            <List/>
-           <button className="btn"> Clear</button>
            
            </section>
        </>
