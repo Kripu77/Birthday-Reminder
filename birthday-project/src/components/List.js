@@ -13,7 +13,8 @@ const List = () => {
        <h1> {users.length} Birthdays Today</h1> 
        { //map over each item in the array and print them out
            users.map((value)=>{
-const {id, name, age, image} = value;
+const {id, name, age, image} = value;//destructure it for more readbility
+
 return (<div key={id} className='person'> 
 <img src={image}/>
 <div>
@@ -25,7 +26,8 @@ return (<div key={id} className='person'>
 </div>)
 
            })
-       }
+       }   
+       {/* onclick clear the array and set it to an empty array */}
         <button className="btn" onClick={()=> setUsers([])} style={{background:"var(--clr-primary-6)"}}> Clear</button>
        </>
     )
