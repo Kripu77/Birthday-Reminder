@@ -25,7 +25,7 @@ return (<div key={id} className='person'>
 
            })
        }
-        <button className="btn" onClick={()=> setUsers([])}> Clear</button>
+        <button className="btn" onClick={()=> setUsers([])} style={{background:"var(--clr-primary-6)"}}> Clear</button>
        </>
     )
 }

@@ -4,7 +4,7 @@ import {data} from '../data'
 
 const Counter = () => {
 
-    const[users, setUsers] = useState(data);
+   
     return (
        <>
        
